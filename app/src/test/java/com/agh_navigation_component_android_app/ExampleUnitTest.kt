@@ -1,4 +1,4 @@
-package com.agh.navigationcomponent
+package com.agh_navigation_component_android_app
 
 import org.junit.Test
 
