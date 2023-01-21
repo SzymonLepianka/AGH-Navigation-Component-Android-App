@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
+    android:label="Login"
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.agh_navigation_component_android_app.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
@@ -33,8 +34,8 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.agh_navigation_component_android_app.WelcomeFragment"
-        android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
+        android:label="{username}"
+        tools:layout="@layout/fragment_welcome">
         <argument
             android:name="username"
             app:argType="string" />
