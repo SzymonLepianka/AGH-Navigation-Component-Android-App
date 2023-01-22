@@ -8,13 +8,15 @@ import androidx.navigation.fragment.findNavController
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
+    // sets up the fragment's views and their interactions
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val loginButton: Button = view.findViewById(R.id.button_login)
         loginButton.setOnClickListener {
 
-            // this method name is generated from the ID of action in NavGraph
+            // Creates an action that will navigate to the LoginFragment.
+            // This method name is generated from the ID of action in NavGraph.
             val action = HomeFragmentDirections.actionHomeFragmentToLoginFragment()
 
             // move to second fragment
