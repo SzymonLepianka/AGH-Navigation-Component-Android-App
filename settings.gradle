@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Navigation Component Tutorial"
+rootProject.name = "AGH Navigation Component Android App"
